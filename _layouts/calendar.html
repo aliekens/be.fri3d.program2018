@@ -2,14 +2,6 @@
 {% include pageheader.html %}
 <p>{{content}}</p>
 
-<div class="contentcontrols">
-    <span class="label">Toon tracks</span>
-    {% for loc in site.locations %}
-        {% if 'Locaties' != loc.title %}
-        <button class="toggletrack visible" data-track="{{loc.track}}"> {{loc.title}}</button>
-        {% endif %}
-    {% endfor %}
-</div>
 <div id="calendar" class="calendar"></div>
 
 <div class="popover-wrapper">
